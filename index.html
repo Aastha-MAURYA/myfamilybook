@@ -1,0 +1,40 @@
+<html>
+  <head>
+  <link rel="stylesheet" href="style.css">  
+  </head>
+  <title> Family Book</title>
+  <body>
+    <h1> Family Book</h1>
+    <hr> <hr>
+    <img id="family_img" src="https://i.postimg.cc/MKdhy06Z/family.jpg">
+    <h3 id="one">1. Our Family Book</h3>
+     <button type="button" onclick="family()">Next</button>
+<hr>
+   <script>
+   var names=[
+   "1. Ranbir singh",
+               "2. Sheela singh",
+               "3. Diljeet Singh",
+               "4. Alia singh",
+               "5. Anu singh",
+               "6. Rocky singh"
+   ];
+ var images=[
+ "https://i.pinimg.com/originals/d5/6c/d2/d56cd25436d0d3f56ad2f143750f7455.png",
+       "https://image.shutterstock.com/image-illustration/cartoon-old-woman-cane-260nw-1376524529.jpg",
+       "https://static2.bigstockphoto.com/3/7/1/large2/173568854.jpg",
+       "https://cdn5.vectorstock.com/i/1000x1000/45/09/cute-cartoon-a-young-mother-vector-4414509.jpg", 
+       "https://us.123rf.com/450wm/yupiramos/yupiramos1905/yupiramos190505227/122760736-little-girl-avatar-character-vector-illustration-design.jpg?ver=6",
+       "https://i.pinimg.com/736x/77/d4/15/77d41520a3f07995b184797a3734bf44.jpg",
+ ];
+ var i=0;
+ function family(){
+   document.getElementById("one").innerHTML=names[i];
+   document.getElementById("family_img").src=images[i];
+   i++;
+   if(i==6){
+     i=0;
+   }}
+  </script>
+  <script async src="https://drv.tw/inc/wd.js"></script></body>
+</html>
